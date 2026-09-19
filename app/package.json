@@ -1,0 +1,39 @@
+{
+  "name": "SOLOQUANT",
+  "productName": "SOLOQUANT",
+  "version": "1.0.0",
+  "description": "SOLOQUANT",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Tao Mo",
+    "email": "alxmo@foxmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bytenode": "^1.5.6",
+    "compressing": "^1.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "electron-squirrel-startup": "^1.0.0",
+    "express": "^4.21.2",
+    "steamworks-api": "^0.0.3",
+    "steamworks.js": "^0.4.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "22.1.0"
+  }
+}

@@ -1,0 +1,16 @@
+# Streamlit 配置文件
+# 解决 enableCORS=false 与 enableXsrfProtection=true 冲突问题
+
+[server]
+# 允许跨域 (iframe 嵌入聊天组件需要)
+enableCORS = false
+# 关闭 XSRF 保护 (与 enableCORS=false 配合, 允许 iframe 跨域)
+enableXsrfProtection = false
+# 端口
+port = 8501
+# 无头模式 (不自动打开浏览器, 由启动脚本控制)
+headless = true
+
+[browser]
+# 不收集使用统计
+gatherUsageStats = false

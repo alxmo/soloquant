@@ -1,0 +1,100 @@
+# ═══════════════════════════════════════════════════════════════
+# Soloquant - .gitignore
+# ═══════════════════════════════════════════════════════════════
+
+# ─── 敏感信息（绝不提交）───
+.env
+.env.*
+!.env.example
+!.env.cloud.example
+!.env.local.example
+*.pem
+*.key
+secrets/
+
+# ─── Python 运行时 ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+wheels/
+.installed.cfg
+*.egg
+
+# ─── 虚拟环境 / 嵌入式环境 ───
+venv/
+.venv/
+env/
+python_env/
+ENV/
+
+# ─── 测试与覆盖率 ───
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+
+# ─── 数据与日志（运行时生成）───
+data/
+!data/.gitkeep
+logs/
+*.log
+mlruns/
+mlartifacts/
+
+# ─── AI 助手内部目录 ───
+.soloomo/
+
+# ─── 内部规划文档（不公开）───
+documents/plan_*.md
+documents/test_reports/
+documents/screen_check.png
+documents/crypto_trading_plan.md
+
+# ─── IDE / 编辑器 ───
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── 操作系统 ───
+.DS_Store
+Thumbs.db
+desktop.ini
+*.bak
+src/ui/.bak/
+
+# ─── 模型与缓存文件 ───
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.h5
+*.ckpt
+models/
+checkpoints/
+
+# ─── Jupyter ───
+.ipynb_checkpoints/
+
+# ─── 临时文件 ───
+*.tmp
+*.temp
+~$*
+
+# ─── 内部文档（不公开）───
+documents/_pyflakes_raw.json
+documents/代码检查优化报告_*.md
+documents/热门项目对比分析与改进建议报告.md
+documents/GitHub开源发布手册.md
+documents/i18n_*.json
+documents/
