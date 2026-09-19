@@ -98,3 +98,6 @@ documents/热门项目对比分析与改进建议报告.md
 documents/GitHub开源发布手册.md
 documents/i18n_*.json
 documents/
+
+# 本地脚本目录（不上传）
+scripts/
